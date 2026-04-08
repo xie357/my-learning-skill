@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>每日英语单词记忆助手</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="app-header">
+      <h1>每日英语单词记忆助手</h1>
+      <p>包含单词展示、发音、打卡记录和本地存储</p>
+    </header>
+
+    <section class="card current-word-card">
+      <div class="word-meta">
+        <span class="label">今日单词</span>
+        <button id="speakButton" class="btn btn-speak">发音</button>
+      </div>
+      <h2 id="wordText">Loading...</h2>
+      <p id="wordMeaning">正在加载单词释义...</p>
+      <div class="action-row">
+        <button id="prevButton" class="btn">上一词</button>
+        <button id="nextButton" class="btn btn-primary">下一词</button>
+      </div>
+    </section>
+
+    <section class="card history-card">
+      <div class="card-header">
+        <h2>打卡记录</h2>
+        <button id="clearButton" class="btn btn-secondary">清空记录</button>
+      </div>
+      <ul id="historyList" class="history-list"></ul>
+      <p id="historyHint" class="hint">你今天还没有打卡，赶快开始记单词吧！</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
